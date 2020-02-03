@@ -1,5 +1,5 @@
-from urlparse import urljoin
-
+#from urlparse import urljoin
+from urllib.parse import urljoin
 
 server = 'https://pypi.org/'
 detail_path = '/project/Flask/%s/'

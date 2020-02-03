@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-from urlparse import urlparse
+#from urlparse import urlparse
+from urllib.parse import urljoin
 from flask import Markup
 
 
@@ -166,6 +167,6 @@ projects = {
 }
 
 # order projects by name
-for _category in projects.itervalues():
+for _category in projects.values():
     _category.sort(key=lambda x: x.name.lower())
 del _category
